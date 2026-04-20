@@ -1,0 +1,14 @@
+# Variables de entorno
+.env
+venv
+receptor-boletines
+
+# __pycache__ y archivos .pyc
+__pycache__
+*.pyc
+
+# Git y otros archivos de control de versiones
+.gitignore
+
+# Docker y archivos relacionados
+.dockerignore
