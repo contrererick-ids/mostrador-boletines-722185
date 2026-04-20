@@ -8,9 +8,11 @@ from services.database.db import get_boletin, mark_as_read
 
 app = FastAPI()
 
+
 @app.get("/")
 def read_root():
     return {"message": "¡Hola desde el contenedor de FastAPI!"}
+
 
 @app.get("/boletines/{boletin_id}")
 async def get_boletin_endpoint(boletin_id: str, correoElectronico: str = Query(...)):

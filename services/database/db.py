@@ -11,6 +11,7 @@ DB_USER = os.getenv('DB_USER')
 DB_PASSWORD = os.getenv('DB_PASSWORD')
 DB_NAME = os.getenv('DB_NAME')
 
+
 def database_connection():
     try:
         # Establecer la conexión con los parámetros requeridos
@@ -27,6 +28,7 @@ def database_connection():
 
     except Error as error:
         print(f'Error al conectar a MySQL: {error}')
+
 
 def get_boletin(boletin_id, email):
     try:
@@ -63,6 +65,7 @@ def get_boletin(boletin_id, email):
             conexion.close()
             print('Conexión a la base de datos cerrada.')
     return None
+
 
 def mark_as_read(boletin_id):
     try:
